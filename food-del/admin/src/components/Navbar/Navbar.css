@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(10%,80px);
+}
+.navbar .profile{
+    width: 40px;
+}
+.admin-text {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: tomato;
+    text-align: center;
+  }

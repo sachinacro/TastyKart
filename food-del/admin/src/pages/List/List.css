@@ -1,0 +1,199 @@
+.edit-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.edit-form {
+  background-color: white;
+  max-width: 500px;
+  width: 90%;
+  padding: 25px;
+  border-radius: 10px;
+  animation: popFade 0.4s ease-in-out;
+  z-index: 1001;
+}
+
+@keyframes popFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.list-table-format.title{
+    background-color: #f9f9f9;
+  
+}
+
+.list-table-format img{
+    width: 50px;
+    border-radius: 5px;
+    
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 0.5fr 0.5fr 0.5fr; /* adjust as per your layout */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid tomato;
+}
+
+/* Button Styles */
+.remove-btn,
+.edit-btn {
+  width: 60%;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  
+}
+
+/* Remove button style */
+.remove-btn {
+  background-color: #e74c3c;
+}
+
+/* Edit button style */
+.edit-btn {
+  background-color: #3498db;
+}
+
+/* Hover effects (optional) */
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Optional: Table title boldness */
+.list-table-format.title {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+
+.edit-form {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-form h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .edit-form input[type="text"],
+  .edit-form input[type="number"]
+   {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline-color: tomato;
+  }
+
+  input[type="file"] {
+    margin-right: 15px;
+    padding: 8px 12px;
+    border: 1px solid tomato;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    outline-color: tomato;
+  }
+  
+  input[type="file"]::-webkit-file-upload-button {
+    background-color: tomato;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #d63b1d;
+  }
+  
+  
+  .save-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c82333;
+  }
+  
+  
+@media (max-width:600px){
+    .list-table-format{
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 15px;
+    }
+    .list-table-format.title{
+        display: none;
+    }
+}
+.cursor{
+    cursor: pointer;
+}
